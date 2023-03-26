@@ -1,7 +1,8 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose"
 import { Document } from "mongoose"
 
-@Schema()
+@Schema() //used to set the class as a DB schema
+//used to make a model for collection in data base
 export class Pokemon extends Document{
     @Prop({
         unique:true,
